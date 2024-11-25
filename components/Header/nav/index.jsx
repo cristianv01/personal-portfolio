@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import styles from './style.module.scss';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-import { menuSlide } from '../anim.js';
+// import { menuSlide } from '../anim.js';
 import Link from './Link';
 
 const navItems = [
@@ -30,13 +30,13 @@ export default function index() {
   const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
   return (
-    <motion.div 
-      variants={menuSlide} 
-      initial="initial" 
-      animate="enter" 
-      exit="exit" 
-      className={styles.menu}
-      >
+    // <motion.div 
+    //   variants={menuSlide} 
+    //   initial="initial" 
+    //   animate="enter" 
+    //   exit="exit" 
+    //   className={styles.menu}
+    //   >
        <div className={styles.body}>
             <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>
                     <div className={styles.header}>
@@ -60,6 +60,6 @@ export default function index() {
                 <a>LinkedIn</a>
             </div>
         </div>
-    </motion.div>
+  
   )
 }
