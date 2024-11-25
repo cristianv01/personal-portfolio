@@ -1,0 +1,17 @@
+
+.spotifyContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .spotifyEmbed {
+    background: #000;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .spotifyEmbed:hover {
+    transform: scale(1.01);
+  }

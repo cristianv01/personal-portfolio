@@ -1,0 +1,154 @@
+.projectContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+}
+
+.contentWrapper {
+    display: flex;
+    gap: 3rem;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    max-width: 800px;
+
+    h1 {
+        margin-top: 10%;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        color: white;
+    }
+
+    section {
+        margin-bottom: 3rem;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        border-radius: 8px;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: white;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+
+            li {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 0.5rem;
+                padding-left: 1.5rem;
+                position: relative;
+                color: white;
+
+                &::before {
+                    content: ">";
+                    position: absolute;
+                    left: 0;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}
+
+.visualsContainer {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    max-width: 500px;
+}
+
+.visualCard {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+
+    .visual {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .caption {
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.techStack {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.results {
+    background: rgba(255, 255, 255, 0.05) !important;
+    
+    ul {
+        margin-top: 1rem;
+    }
+}
+
+.future {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1200px) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .visualsContainer {
+        position: static;
+        max-width: 100%;
+    }
+
+    .content {
+        h1 {
+            margin-top: 5%;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        padding: 1rem;
+    }
+
+    .content {
+        section {
+            padding: 1rem;
+        }
+    }
+}

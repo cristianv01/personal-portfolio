@@ -1,0 +1,142 @@
+.projectContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .backLink {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+    
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.7;
+    }
+  }
+  
+  .content {
+    color: white;
+  
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      margin-top: 100px;
+      font-weight: bold;
+    }
+  
+    section {
+      margin-bottom: 3rem;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-weight: 600;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: white;
+        margin-bottom: 1.5rem;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+  
+        li {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+          padding-left: 1.5rem;
+          position: relative;
+          color: white;
+  
+          &::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: rgba(255, 255, 255, 0.7);
+          }
+  
+          strong {
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  
+  .technical, .optimization {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .architecture {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .performance {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .benchmarkContainer {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .benchmarkImage {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .imageCaption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .outcome {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .projectContainer {
+      padding: 1rem;
+    }
+  
+    .content {
+      h1 {
+        font-size: 2.5rem;
+      }
+  
+      h2 {
+        font-size: 1.75rem;
+      }
+    }
+  }

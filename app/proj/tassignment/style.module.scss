@@ -1,0 +1,159 @@
+.projectContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .nav {
+    margin-bottom: 2rem;
+    
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: opacity 0.3s ease;
+      
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+    }
+  }
+  
+  .content {
+    color: white;
+  
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      margin-top: 100px;
+      font-weight: bold;
+    }
+  
+    section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-weight: 600;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: white;
+        margin-bottom: 1.5rem;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+  
+        li {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+          padding-left: 1.5rem;
+          position: relative;
+          color: white;
+  
+          &::before {
+            content: ">";
+            position: absolute;
+            left: 0;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+  
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  
+  .overview {
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .details {
+    background: rgba(255, 255, 255, 0.08) !important;
+  }
+  
+  .implementation {
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .projectContainer {
+      padding: 1rem;
+    }
+  
+    .content {
+      h1 {
+        font-size: 2.5rem;
+        margin-top: 60px;
+      }
+  
+      h2 {
+        font-size: 1.75rem;
+      }
+  
+      section {
+        padding: 1.5rem;
+      }
+    }
+  }
+  .visualsContainer {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+    max-width: 500px;
+}
+
+.visualCard {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+
+    .visual {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .caption {
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+  @media (max-width: 1200px) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .visualsContainer {
+        position: static;
+        max-width: 100%;
+    }
+
+    .content {
+        h1 {
+            margin-top: 5%;
+            font-size: 2.5rem;
+        }
+    }
+}
