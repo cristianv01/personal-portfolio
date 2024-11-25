@@ -2,7 +2,7 @@
 import styles from './style.module.scss';
 import { useState } from 'react';
 import Nav from './nav';
-import { AnimatePresence } from "framer-motion";
+// import { AnimatePresence } from "framer-motion";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
@@ -54,12 +54,7 @@ export default function Index() {
                     <div className={styles.indicator}></div>
                 </div>
             </div>
-            <div className={styles.burger}>
-                <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
-            </div>
-            <AnimatePresence mode="wait">
-                {isActive && <Nav />}
-            </AnimatePresence>
         </div>
+           
     )
 }
