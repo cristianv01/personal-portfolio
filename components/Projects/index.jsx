@@ -2,11 +2,12 @@
 import styles from './style.module.scss'
 import { useState, useEffect, useRef } from 'react';
 import Project from './components/project';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton';
 import { useRouter } from 'next/navigation'; 
+import { MotionDiv } from './motiondiv';
 
 const projects = [
   {
@@ -101,7 +102,7 @@ export default function Home() {
       <p>More work</p>
     </Rounded> */}
     <>
-        <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
+        <MotionDiv ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
             {
                 projects.map( (project, index) => {
@@ -117,9 +118,9 @@ export default function Home() {
                 })
             }
             </div>
-        </motion.div>
-        <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
+        </MotionDiv>
+        <MotionDiv ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></MotionDiv>
+        <MotionDiv ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</MotionDiv>
     </>
   </main>
   )
