@@ -1,24 +1,23 @@
-'use client';
-import React from 'react';
-import styles from './style.module.scss';
-import Link from 'next/link';
+"use client";
+import React from "react";
+import styles from "./style.module.scss";
+import Link from "next/link";
 
 export default function Resume() {
   return (
     <div className={styles.resumeContainer}>
-
       <div className={styles.resumeContent}>
         <div className={styles.controls}>
-          <a 
-            href="/resume/resume.pdf"
+          <a
+            href="/resume/resume2.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.viewButton}
           >
             View PDF
           </a>
-          <a 
-            href="/resume/resume.pdf"
+          <a
+            href="/resume/resume2.pdf"
             download="CristianValencia_Resume.pdf"
             className={styles.downloadButton}
           >
@@ -28,7 +27,7 @@ export default function Resume() {
 
         <div className={styles.pdfViewer}>
           <iframe
-            src="/resume/resume.pdf"
+            src="/resume/resume2.pdf"
             title="resume"
             className={styles.pdfFrame}
           />
@@ -37,3 +36,4 @@ export default function Resume() {
     </div>
   );
 }
+
