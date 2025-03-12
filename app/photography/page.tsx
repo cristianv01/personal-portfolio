@@ -13,11 +13,11 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
-import comuna from "/images/photography/comuna_man.jpg";
-import green from "/images/photography/green.jpg";
-import jesus from "/images/photography/jesus.jpg";
-import lake from "/images/photography/lake.jpg";
-import luz from "/images/photography/luz.jpg";
+import comuna from "../../public/images/photography/comuna_man.jpg";
+import green from "../../public/images/photography/green.jpg";
+import jesus from "../../public/images/photography/jesus.jpg";
+import lake from "../../public/images/photography/lake.jpg";
+import luz from "../../public/images/photography/luz.jpg";
 import { useRef } from "react";
 import type { LightGallery } from "lightgallery/lightgallery";
 
@@ -76,8 +76,6 @@ export default function Photography() {
                       src={image}
                       alt="placeholder"
                       className="my-4 hover:opacity-70 cursor-pointer"
-                      placeholder="blur"
-                      blurDataURL="shimmer"
                       onClick={() => {
                         lightboxRef.current?.openGallery(idx);
                       }}
