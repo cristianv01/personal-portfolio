@@ -14,12 +14,12 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
 import comuna from "../../public/images/photography/comuna_man.jpg";
-import green from "../../public/images/photography/green.JPG";
+import green from "../../public/images/photography/green.jpg";
 import jesus from "../../public/images/photography/jesus.jpg";
 import lake from "../../public/images/photography/lake.jpg";
 import luz from "../../public/images/photography/luz.jpg";
 import { useRef } from "react";
-import type LightGallery from "lightgallery/lightgallery";
+import type { LightGallery } from "lightgallery/lightgallery";
 
 const tabs = [
   {
